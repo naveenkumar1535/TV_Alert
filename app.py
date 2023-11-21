@@ -10,5 +10,8 @@ def webhook():
     # Add your custom logic to handle the TradingView alert data here
     return jsonify({'message': 'Webhook received successfully'})
 
+def main():
+    webhook()
+    
 if __name__ == '__main__':
     app.run(debug=True)
