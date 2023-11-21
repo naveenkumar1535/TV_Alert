@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
+    print('Inside Code')
     data = request.get_json()
     print("Received TradingView alert:")
     print(data)
